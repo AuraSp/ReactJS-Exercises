@@ -1,0 +1,18 @@
+
+.buttons button {
+    background-color: #fff;
+}
+
+.buttons button:hover {
+    background-color: darkgray;
+}
+
+.buttons button:focus {
+    background-color: #ffc107;
+}
+
+.m-0 {
+    font-size: 1em;
+    background-color: rgba(34, 34, 34, 0.541);
+    list-style-type: none;
+}
