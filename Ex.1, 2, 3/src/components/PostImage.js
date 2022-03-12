@@ -9,20 +9,6 @@ export default function PostImage(img) {
         setColor(!color);
     }
 
-    const [like, setLike] = useState(0);
-    const [dislike, setDislike] = useState(0);
-
-    function countLike() {
-        setLike(like + 1);
-    }
-    function countDislike() {
-        setDislike(dislike + 1);
-    }
-    function reset() {
-        setLike(0);
-        setDislike(0);
-    }
-
     return (
         <div className={`col-12 d-flex flex-row justify-content-center ${color ? 'bg-secondary' : 'bg-light'}`}>
             <div className='card bg-transparent border-0 text-dark fs-3 text-center'>
@@ -44,15 +30,6 @@ export default function PostImage(img) {
             </div>
             <div className='btn fs-3'>
                 <button onClick={bgColor} className='border border-0 p-3'>Color change</button>
-            </div>
-            <div className='d-flex fs-3'>
-            <button onClick={reset} className='border border-0 p-3'>Reset</button>
-            </div>
-            <div className='d-flex fs-3'>
-            <button onClick={countLike} className='border border-0 p-3'>Like {like}</button>
-            </div>
-            <div className='d-flex fs-3'>
-            <button onClick={countDislike} className='border border-0 p-3'>Dislike {dislike}</button>
             </div>
         </div>
     );

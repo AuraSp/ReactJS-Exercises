@@ -27,11 +27,11 @@ body {
     font-size: .8em;
 }
 
-h3 {
+.card-body h3 {
     font-family: 'Kalam';
 }
 
-img {
+.card img {
     height: 300px;
     object-fit: contain;
 }
@@ -45,7 +45,7 @@ img {
     position: relative;
 }
 
-button {
+.fs-3 button {
     background-color: #1479fc;
     color: white;
     position:absolute;
@@ -53,6 +53,6 @@ button {
     width: 8em;
 }
 
-button:hover {
+.fs-3 button:hover {
     background-color: #104b94;
 }
